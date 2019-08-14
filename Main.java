@@ -17,7 +17,7 @@ public class Main {
         System.out.println(nrY);
 
 
-        while (nrX != nrY) { //
+        while (nrX != nrY) {
             System.out.println("Mai generam o data numere");
 
         }
