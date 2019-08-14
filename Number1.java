@@ -7,7 +7,7 @@ public class Number1 {
         return a;
     }
 
-    public static int alDoileaNumar(){
+    public static int alDoileaNumar(){ //
         int b = (int) (Math.random()*11);
         return b;
 
