@@ -1,28 +1,50 @@
 package com.teste.negru;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        Number1 x = new Number1();
-        Number1 y = new Number1();
+        int sex = 0;
+        String cnp ="";
 
-        x.primulNumar();
-        y.alDoileaNumar();
+        for (int rSex = 1 + (int) (Math.random() * 7); rSex > 0; ) {
+            if (rSex == 1 || rSex == 5) {
+                sex = rSex;
+                System.out.println("Sex: Masculin");
+                cnp = Integer.toString(rSex);
+                break;
 
-        int nrX = x.primulNumar();
-        int nrY = y.alDoileaNumar();
-
-        System.out.println(nrX);
-        System.out.println(nrY);
-
-
-        while (nrX != nrY) {
-            System.out.println("Mai generam o data numere");
-
+            } else if (rSex == 2 || rSex == 6) {
+                sex = rSex;
+                System.out.println("Sex: Feminin");
+                cnp = Integer.toString(rSex);
+                break;
+            }
+            rSex = 1 + (int) (Math.random() * 7);
         }
-        System.out.println(nrX + " este egal cu " + nrY);
 
+        int an = 2019 - (14 + (int) (Math.random() * 67));
+        System.out.println("An nastere: " + an);
+
+        if (an < 2000) {
+            cnp = cnp+an%100;
+
+        } else {
+            cnp = cnp+0+an%100;
+        }
+        System.out.println("CNP: "+cnp);
     }
 }
+
+
+
+
+
+
+
+
+
+
 
