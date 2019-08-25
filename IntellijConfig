@@ -1,0 +1,9 @@
+help -  edit custom vm options
+  - da 6 gb la : -Xms6g
+                 -Xmx6g
+
+go to file - settings
+    -search for compiler
+       - check build project automatically
+       - check compile independent modules in paralel
+       - increase build process heap size to 2700
