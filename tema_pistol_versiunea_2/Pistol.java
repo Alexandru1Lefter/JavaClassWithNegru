@@ -19,7 +19,7 @@ public class Pistol {
    // public Pistol(int CAPACITATE_INCARCATOR) {
    //     this.CAPACITATE_INCARCATOR = CAPACITATE_INCARCATOR;
    // }
-
+//
     public void schimbaIncarcator(Incarcator i) {
          incarcatorPistol = i;
         
