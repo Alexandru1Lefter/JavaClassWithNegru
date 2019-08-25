@@ -28,6 +28,43 @@ public class NumereUniceTema {
         System.out.println("\n\r separator");
         System.out.println(duplicateNumbers);
 
+        int[][] duplicateNrAndNrOfOccurence = numereUniceTema.findOcurrences(duplicateNumbers);
+
+        numereUniceTema.printArray2D(duplicateNrAndNrOfOccurence);
+    }
+
+    private void printArray2D(int[][] duplicateNrAndNrOfOccurence) {
+
+        for(int i = 0; i < duplicateNrAndNrOfOccurence.length; i++){
+            System.out.println("--");
+            for (int j = 0; j < duplicateNrAndNrOfOccurence[i].length; j++){
+                System.out.print(duplicateNrAndNrOfOccurence[i][j] + " ");
+            }
+            System.out.println("");
+        }
+    }
+
+    private int[][] findOcurrences(List<Integer> duplicateNumbers) {
+
+        int[][] duplicateNrAndNrOfOccurence = new int [duplicateNumbers.size()][2];
+
+       loop1: for (int eachDuplicateNumber : duplicateNumbers){
+            for(int i = 0; i < duplicateNrAndNrOfOccurence.length; i++){
+
+                int duplicateNumberValue =  duplicateNrAndNrOfOccurence[i][0];
+
+                if (duplicateNumberValue == 0){
+                    duplicateNrAndNrOfOccurence[i][0] = eachDuplicateNumber;
+                    duplicateNrAndNrOfOccurence[i][1] =  duplicateNrAndNrOfOccurence[i][1] + 1;
+                    continue loop1;
+                }else if (duplicateNumberValue == eachDuplicateNumber){
+                    duplicateNrAndNrOfOccurence[i][1] = duplicateNrAndNrOfOccurence[i][1] + 1;
+                }
+            }
+        }
+
+
+        return duplicateNrAndNrOfOccurence;
     }
 
     private List<Integer> fillDupesArray(int[] notSortedValues) {
