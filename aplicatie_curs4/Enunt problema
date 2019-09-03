@@ -1,0 +1,11 @@
+Se creeaza clasa Persoana dupa cum urmeaza:
+• clasa contine doua informatii – nume si data de nastere a persoanei, cea din urma fiind
+memorata sub forma a 3 campuri separate: an, luna si zi
+• nu trebuie sa se poata crea obiecte Persoana invalide. In acest scop, constructorul va fi
+marcat ca private si va fi creata o metoda publica statica getInstance(), care isi valideaza
+datele de intrare si intoarce fie null (in cazul in care datele de intrare sunt invalide) fie un
+nou obiect Persoana creat pe baza acelor date. Pentru validare se folosesc metode ajutatoare
+• clasa va dispune de o metoda toString() care produce o varianta formatata a detaliilor
+persoanei, folosindu-se de asemenea de metode ajutatoare
+Programul va citi de la tastatura un nume si o data de nastere si, daca acestea sunt valide, va crea cu
+ele un nou obiect Persoana si ii va afisa descrierea prin apelarea metodei toString().
