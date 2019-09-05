@@ -1,0 +1,14 @@
+1. Se "da cu zarul" (se genereaza un numar intreg aleator intre 1 si 6). Se afiseaza fie valoarea
+zarului in litere, fie fata zarului. In cazul in care se alege a doua varianta, fata zarului va fi
+formata din 3 linii a cate 3 caractere, in care punctele de pe zar sunt reprezentate prin
+caractere * iar restul sunt spatii.
+
+2. Se da cu doua zaruri. Se afiseaza zarurile. Se evidentiaza urmatoarele situatii tipice jocului
+de table:
+• dubla (z1 = z2)
+• poarta in casa ( z1-z2=2 sau z1-z2 = -2)
+
+3. Se da cu 2 zaruri de 20 de ori. Se memoreaza toate aruncarile intr-un array bidimensional
+(20 x 2). Se parcurge array-ul, se calculeaza si se afiseaza:
+• numar si procent de duble
+• numar si procent de porti
